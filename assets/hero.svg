@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#031a0d"/>
+      <stop offset=".5" stop-color="#0b4a28"/>
+      <stop offset=".8" stop-color="#2f9a5b"/>
+      <stop offset="1" stop-color="#bfe8cd"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".95"/>
+      <stop offset=".5" stop-color="#d9f3e2" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#d9f3e2" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="star" width="96" height="96" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#ffffff" stroke-opacity=".2" stroke-width="1.2">
+        <rect x="18" y="18" width="60" height="60"/>
+        <rect x="18" y="18" width="60" height="60" transform="rotate(45 48 48)"/>
+      </g>
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="1"/>
+      <stop offset=".75" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="latmask"><rect width="1920" height="1080" fill="url(#fade)"/></mask>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <rect width="1920" height="1080" fill="url(#star)" mask="url(#latmask)"/>
+  <circle cx="1230" cy="700" r="320" fill="url(#sun)"/>
+  <circle cx="1230" cy="700" r="112" fill="#f4fbf6"/>
+  <g fill="#0a3a20">
+    <rect x="0" y="720" width="140" height="360"/><rect x="140" y="680" width="90" height="400"/>
+    <rect x="230" y="740" width="170" height="340"/><rect x="400" y="700" width="70" height="380"/>
+    <rect x="1480" y="710" width="120" height="370"/><rect x="1600" y="670" width="80" height="410"/>
+    <rect x="1680" y="730" width="140" height="350"/><rect x="1820" y="690" width="100" height="390"/>
+    <path d="M470 760 q40-70 80 0z"/><path d="M1680 740 q35-60 70 0z"/>
+  </g>
+  <g fill="#03150a">
+    <rect x="470" y="720" width="980" height="360"/>
+    <path d="M700 740 A260 260 0 0 1 1220 740 Z"/>
+    <rect x="956" y="430" width="8" height="52"/>
+    <circle cx="960" cy="424" r="11"/>
+    <g id="m"><rect x="598" y="400" width="44" height="340"/><rect x="584" y="440" width="72" height="12"/>
+      <rect x="590" y="372" width="60" height="30"/><path d="M590 372 Q620 300 650 372Z"/><rect x="618" y="270" width="4" height="50"/><circle cx="620" cy="266" r="7"/></g>
+    <use href="#m" x="702"/>
+    <rect x="470" y="690" width="120" height="40"/><rect x="1330" y="690" width="120" height="40"/>
+  </g>
+  <g fill="#e9f8ee" fill-opacity=".9">
+    <path d="M520 1000v-80a22 22 0 0 1 44 0v80z"/><path d="M700 1000v-90a26 26 0 0 1 52 0v90z"/>
+    <path d="M870 1000v-130a40 40 0 0 1 80 0v130z"/><path d="M970 1000v-130a40 40 0 0 1 80 0v130z"/>
+    <path d="M1170 1000v-90a26 26 0 0 1 52 0v90z"/><path d="M1356 1000v-80a22 22 0 0 1 44 0v80z"/>
+  </g>
+  <g fill="#e9f8ee" fill-opacity=".8"><circle cx="620" cy="420" r="4"/><circle cx="1322" cy="420" r="4"/></g>
+  <rect x="0" y="1040" width="1920" height="40" fill="#020d06"/>
+</svg>

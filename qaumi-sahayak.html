@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qaumi Sahayak | KSIJ Mumbai</title>
+<link rel="icon" href="assets/logo-ksij.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="qaumi">
+<main id="main">
+  <section class="page-head"><div class="wrap">
+    <div class="crumbs"><a href="index.html">Home</a> / Qaumi Sahayak</div>
+    <h1>Qaumi Sahayak</h1>
+    <p>Contribute to the community fund and pay your Qaumi Sahayak fee online.</p>
+  </div></section>
+  <section class="section"><div class="wrap form-layout">
+    <form class="card" data-confirm="Payment is not connected yet. This form is a front-end preview." novalidate>
+      <p><b>To the Hon. Joint Secretary, KSI Jamat, Mumbai.</b> I would like to pay for Qaumi Sahayak.</p>
+      <div class="form-grid">
+        <div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="father">Father’s name</label><input id="father" name="father" required></div>
+        <div class="field"><label for="grand">Grandfather’s name</label><input id="grand" name="grand" required></div>
+        <div class="field"><label for="memno">Membership number</label><input id="memno" name="memno" required></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="mobile">Mobile number</label><input id="mobile" name="mobile" type="tel" inputmode="numeric" autocomplete="tel" pattern="[0-9+ ]{10,14}" required></div>
+        <div class="field full"><label for="aadhaar">Aadhaar number</label><input id="aadhaar" name="aadhaar" inputmode="numeric" pattern="[0-9]{12}" maxlength="12" required><span class="hint">12 digits, no spaces.</span></div>
+        <div class="field full"><label class="check"><input type="checkbox" required><span>I am paying ₹25,000 as my Qaumi Sahayak fee.</span></label></div>
+        <div class="field full"><button class="btn btn-green" type="submit">Pay ₹25,000</button></div>
+      </div>
+    </form>
+    <aside class="aside-card">
+      <p>Qaumi Sahayak fee</p>
+      <span class="amount">₹25,000</span>
+      <ul><li>Keep your membership number ready</li><li>You will confirm by email</li></ul>
+      <p class="form-note">Questions? Write to <a href="mailto:info@ksijamat.org">info@ksijamat.org</a>.</p>
+    </aside>
+  </div></section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
