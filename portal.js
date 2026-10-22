@@ -57,7 +57,7 @@
     const s = big.firstElementChild;
     big.style.fontSize = "100px";
     const w = s.getBoundingClientRect().width;
-    const fs = (100 * root.clientWidth) / w;
+    const fs = Math.min((100 * root.clientWidth) / w, 300);
     big.style.fontSize = fs + "px";
     big.style.height = fs * 0.86 + "px";
   }
